@@ -1,7 +1,6 @@
 # curr-culo-online
 my resume online
-Link my resume On-line: https://curriculo-gil-silva.netlify.app/
-
+Link my resume On-line: https://resume-gilvanete-silva.netlify.app/
 <span align="center">
 
 #  Currículo )n-line html, css & javascript! 👋 
