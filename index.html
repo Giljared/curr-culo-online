@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Gilvanete Silva</title>
+    <link rel="icon" type="resume" href="resume.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="acordeon.css">
+    <link rel="stylesheet" href="languages.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <img src="my-photo.jpg" alt="Foto de Perfil" class="photo" id="profile.photo">
+
+            <h1 class="title">
+                <span id="profile.name"><strong>Gilvanete Silva<strong></span>
+            </h1>
+
+            <button class="goal" onclick="typeWriter()">Objetivo</button>
+
+            <p id="demo"></p>
+
+            <script>
+              var i = 0;
+              var txt = 'Atuar como FrontEnd Developer';
+              var speed = 50;
+              
+              function typeWriter() {
+                if (i < txt.length) {
+                  document.getElementById("demo").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+            </script>
+
+            <div class="information">
+                <p class="job" id="profile.job">FrontEnd Developer (Desenvolvimento Web)</p>
+                <p class="location" id="profile.location">Caxias do Sul/RS - Brasil</p>
+                <p class="phone">
+                    <a href="tel:(54) 99631-2018" id="profile.phone" target="_blank">(54) 99631-2018</a>
+                </p>
+                <p class="email">
+                    <a href="gmat337@gmail.com" id="profile.email" target="_blank">gmat337@gmail.com</a>
+                </p>
+            </div>
+        </header>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Skills</h2>
+            </button>
+
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Ferramentas:</h3>
+                        <ul id="profile.skills.hardSkills">
+                          <li><img src="html.png" alt="HTML" title="HTML"></li>
+                          <li><img src="css.png" alt="CSS" title="CSS"></li>
+                          <li><img src="js.png" alt="JavaScript" title="JavaScript"></li>
+                          <li><img src="git.png" alt="Git" title="Git"></li>
+                          <li><img src="github.png" alt="GitHub" title="GitHub"></li>
+                          <li><img src="react.png" alt="React" title="React"></li>
+                        </ul>
+                    </section>
+
+                    <section class="personal">
+                        <h3>OUTROS SKILLS</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Professora Autora/Conteudista</li>
+                            <li>Docente em Matemática/Física/Tecnologia</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Idiomas</h2>
+            </button>
+
+            <div class="content">
+                <ul class="languages" id="profile.languages">
+                    <li>Inglês (Avançado)</li>
+                    <li>Espanhol (Básico)</li>
+                    <li>Português (Nativo)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+          <button class="trigger" type="button">
+            <h2>Portfólio</h2>
+          </button>
+
+            <div class="content">
+              <ul class="portfolio" id="profile.portfolio">
+                <li>
+                    <h3 class="github">Portfólio On-line</h3>
+                    <a href="https://github.com/Giljared/portfolio-online" target="_blank">https://github.com/Giljared/portfolio-online</a>
+                </li>
+                <li>
+                    <h3 class="github">Profile Giljared Github</h3>
+                    <a href="https://github.com/Giljared/Giljared" target="_blank">https://github.com/Giljared/Giljared</a>
+                </li>
+                <li>
+                    <h3 class="github">Calculadora de idade On-line</h3>
+                    <a href="https://github.com/Giljared/idade-online" target="_blank">https://github.com/Giljared/idade-online</a>
+                </li>
+                <li>
+                    <h3 class="github">Mini Calendário On-line</h3>
+                    <a href="https://github.com/Giljared/minicalend-rio" target="_blank">https://github.com/Giljared/minicalend-rio</a>
+                </li>
+                <li>
+                    <h3 class="github">Clima On-line API</h3>
+                    <a href="https://github.com/Giljared/CLIMA-GIL-API" target="_blank">https://github.com/Giljared/CLIMA-GIL-API</a>
+                </li>
+                <li>
+                    <h3 class="github">Texto Dinâmico Developed</h3>
+                    <a href="https://github.com/Giljared/gilvanete-developed" target="_blank">https://github.com/Giljared/gilvanete-developed</a>
+                </li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Experiência Profissional</h2>
+            </button>
+
+            <div class="content">
+                <ul class="experience" id="profile.professionalExperience">
+                  <li>
+                    <h3 class="title">Desenvolvedora de Software Júnior<br><a href="https://www.linkedin.com/company/redspark-desenvolvimento-digital/posts/?feedView=all" target="_blank">Redspark</a></h3>
+                    <p class="period">Mai/2022 - Ago/2022</p>
+                    <ul>
+                      <li>Desenvolvimento de projetos, atuando em FrontEnd, em constante integração com o time o Stack de BackEnd</li>
+                      <li>Atuação em versionamento de códigos
+                      </li>
+                      <li>Atuação em HTML, CSS, Javascript, Flutter, Kotlin e Dart
+                      </li>
+                    </ul>
+                  <li>
+                    <h3 class="title">Desenvolvedora Wordpress<br><a href="https://revdigital.com.br/" target="_blank">RevDigital</a></h3>
+                    <p class="period">Jan/2023 - Atual</p>
+                    <ul>
+                      <li>Atuação na criação, personalização e no gerenciamento de sites, atuação com o aprimoramento do software, produzindo novos plugins e novos temas.</li>
+                      <li>Implementação de templates existentes para criar um site rapidamente, criando sites e landingpage completamente customizados, do zero e personalizados.
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <h3 class="title">Professora Autora/Conteudista<br><a href="https://www.linkedin.com/company/delineaedtech/posts/?feedView=all" target="_blank">Delínea</a></h3>
+                    <p class="period">Abril/2018 - Dez/2023</p>
+                    <ul>
+                      <li>Responsável pela preparação do material didático na área de exatas e tecnologia.</li>
+                      <li>Atuação com conhecimento nos componentes curriculares a seres produzidos, implementando o planejamento dos conteúdos e produzindo os materiais didáticos dos cursos/disciplinas na área de exatas e tecnologia.</li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+          <button class="trigger" type="button">
+              <h2>Cursos/Certificados/Diplomas</h2>
+          </button>
+
+          <div class="content">
+              <ul class="curses" id="profile.Certifications">
+                <h3 class="title">Desenvolvimento Front-End do Zero ao Pro (completo)<br><a href="https://drive.google.com/file/d/1lY52DitTeGRe-9JA2Z7f6uKdHu1HIkfv/view?usp=sharing" target="_blank">Reprograma</a></h3>
+                <h3 class="title">Projetos e repositórios Inovadores<br><a href="https://drive.google.com/file/d/1vOiRCR6aQemnhC5TGQC9q6sywyWxR5HJ/view?usp=sharing" target="_blank">Dio</a></h3>
+                <h3 class="title">Tecnologia da Informação e comunicação<br><a href="https://drive.google.com/file/d/1KyKcPD-w62UsMUfVrxcj1-YcdBjFbQzI/view?usp=sharing">CAPES</a></h3>
+                <h3 class="title">CSS: Folhas de Estilo<br><a href="https://drive.google.com/file/d/1mhXRmReyz6Km2w9t_b_vj_7D2tKkp4CL/view?usp=sharing">IFRS</a></h3>
+                <h3 class="title">ADS Análise e Desenvolvimento de Sistemas e Programas<br><a href="https://drive.google.com/file/d/1QGQ4Lt7ae_jwVpUzrUYDqKLqHuPQjVFp/view?usp=sharing" target="_blank">Descomplica Digital</a></h3>
+                <h3 class="title">Data Science<br><a href="https://drive.google.com/file/d/1TIiI2gTIaMm8giBuhnl6yRNTlMAJHP_5/view?usp=sharing" target="_blank">Descomplica Digital</a></h3>        
+                <h3 class="title">Tecnologias Aplicadas à Educação<br><a href="https://drive.google.com/file/d/1DUfE75AYjastuKU849MEJ7afKSMaP-83/view?usp=sharing" target="_blank">Descomplica Digital</a></h3>        
+                <h3 class="title">Docência do Ensino Superior<br><a href="https://drive.google.com/file/d/1Inv6_2chkJT0kYlYIdLJJYq7oP94Synj/view?usp=sharing" target="_blank">Faculdade Fantin</a></h3>        
+                <h3 class="title">Licenciatura em Física<br><a href="https://drive.google.com/file/d/1HkndEIStop1-XlRm49TBwMI-84x5TKF9/view?usp=sharing" target="_blank">IBRA Faculdade</a></h3>        
+                <h3 class="title">Matemática<br><a href="https://drive.google.com/file/d/1APi76yW4LjAKUdbA9ILyWYwHYzuSNet8/view?usp=sharing" target="_blank">Faculdade Facig</a></h3>        
+          </div>
+      </section>
+
+        <footer id="img2">
+            <a href="https://www.linkedin.com/in/gilvanete-silva/" target="_blank">
+              <img src="linkedin.png" alt="LinkedIn" style="display:block">
+            </a>
+            <a href="https://github.com/Giljared" target="_blank">
+              <img src="github.png" alt="GitHub" style="display:block">
+          </a>
+            <a href="mailto:gmat337@gmail.com" target="_blank">
+              <img src="gmail.png" alt="Gmail" style="display:block">
+            </a>
+            <a href="https://wa.me/54996312018" target="_blank">
+              <img src="whatsapp.png" alt="WhatsApp" style="display:block">
+            </a>
+        </footer>
+    </main>
+
+    <script src="acordeon.js"></script>
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
